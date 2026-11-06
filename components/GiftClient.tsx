@@ -350,6 +350,29 @@ export default function GiftClient({ data }: Props) {
 
                   <h2 className="letter-title" style={{ marginTop: '0', color: '#fff4f8' }}>Happy Anniversary, my love 💙</h2>
 
+                  <div className="letter-photo-heart">
+                    <svg viewBox="0 0 100 90" role="img" aria-label="A photo of us inside a heart">
+                      <defs>
+                        <clipPath id="letter-photo-heart-clip">
+                          <path d="M50 88C43 82 8 59 8 32 8 13 32 4 50 24 68 4 92 13 92 32 92 59 57 82 50 88Z" />
+                        </clipPath>
+                      </defs>
+                      <image
+                        href="/images/pic1.jpg"
+                        width="100"
+                        height="90"
+                        preserveAspectRatio="xMidYMid slice"
+                        clipPath="url(#letter-photo-heart-clip)"
+                      />
+                      <path
+                        d="M50 88C43 82 8 59 8 32 8 13 32 4 50 24 68 4 92 13 92 32 92 59 57 82 50 88Z"
+                        fill="none"
+                        stroke="rgba(142, 197, 255, 0.9)"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+
                   <div className="letter-scroll-area">
                     <div className="letter-body" style={{ color: '#fff4f8' }}>{data.message}</div>
                     <div className="letter-divider"><span>✦</span></div>
